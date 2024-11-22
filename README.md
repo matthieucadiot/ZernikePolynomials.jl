@@ -1,2 +1,2 @@
 # ZernikePolynomials.jl
-Julia code for the rigorous computation of products in Zernike polynomials. Applications to computer-assisted proofs of simple elliptic PDEs on the disk.
+Julia code for the rigorous computation of products of Zernike polynomials using Interval Arithmetic. Applications to computer-assisted proofs of simple elliptic PDEs on the disk.
