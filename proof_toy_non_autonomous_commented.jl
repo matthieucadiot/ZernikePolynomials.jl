@@ -1,6 +1,7 @@
 using RadiiPolynomial, IntervalArithmetic, LinearAlgebra, MATLAB, JLD2
 
-include("C:/Users/Matthieu/Desktop/code/julia/Navier_Stokes/list_functions.jl")
+# need to include the code list_functions
+include("path_to_the_repository/list_functions.jl")
 
 # Newton's method for solving a nonlinear system related to a PDE
 # Inputs:
