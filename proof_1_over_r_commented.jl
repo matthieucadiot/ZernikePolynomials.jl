@@ -1,6 +1,7 @@
 using RadiiPolynomial, IntervalArithmetic, LinearAlgebra, Plots, MATLAB
 
-include("C:/Users/Matthieu/Desktop/code/julia/Navier_Stokes/list_functions.jl")
+# need to include the code list_functions
+include("path_to_the_repository/list_functions.jl")
 
 function Newton(U, MMT, iMMT, N, precision)
     # Implementation of Newton's method for solving the nonlinear equation
