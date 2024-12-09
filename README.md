@@ -60,3 +60,7 @@ If you wish to use this code in your publication, research, teaching, or other a
 
 
 # Contact
+
+You can contact me at :
+
+matthieu.cadiot@mail.mcgill.ca
