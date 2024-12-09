@@ -28,7 +28,7 @@ It provides the necessary rigorous computations of the bounds presented along th
 
 ## Application to PDEs on the disk
 
-$$\Delta v (z) +  \bar{z}^m v^2(z) =0$$
+$$\Delta v (z) +  \overline{z}^m v^2(z) =0$$
 
 $$\Delta v(z) +  {z}^{-1} v^2(z) =0$$
 
