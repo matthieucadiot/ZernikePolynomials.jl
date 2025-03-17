@@ -165,15 +165,6 @@ iMMT = mid.(iMMT)
 
 display("MMT and iMMT created")
 
-U = zeros(N+1)
-U[1] = 3.4
-U[2] = -3.4
-U[3] = 0.5
-U[4] = -0.5
-U,nf = Newton(20*U, MMT,iMMT,N,k,m,1e-30)
-
-display(norm(U,1))
-
 # r = 0:0.001:1
 # theta = 2π*r
 # Z = zeros(length(r),length(theta))
@@ -188,6 +179,7 @@ display(norm(U,1))
 #     h = surf(X,Y,Z);
 #     set(h,'LineStyle','none')"
 
+ U = load("U_0.jld2","U") # loading the approximate solution
     precis = 256 ; eps_N = 1e-30
     proof_R_to_the_m(U,N,k,m,precis,eps_N)  
 
@@ -201,14 +193,6 @@ iMMT = mid.(iMMT)
 # MMT = Float64.(MMT) ; iMMT = Float64.(iMMT)
 
 display("MMT and iMMT created")
-U = zeros(N+1)
-U[1] = 0.89
-U[2] = -0.89
-U[3] = 0.24
-U[4] = -0.24
-U,nf = Newton(20*U, MMT,iMMT,N,k,m,1e-20)
-
-display(norm(U,1))
 
 # r = 0:0.001:1
 # theta = 2π*r
@@ -225,7 +209,7 @@ display(norm(U,1))
 #     h = surf(X,Y,Z);
 #     set(h,'LineStyle','none')"
 
-
+ U = load("U_1.jld2","U") # loading the approximate solution
 precis = 256 ; eps_N = 1e-30
 proof_R_to_the_m(U,N,k,m,precis,eps_N)  
 
@@ -243,14 +227,6 @@ iMMT = mid.(iMMT);
 # iMMT = Float64.(iMMT)
 
 display("MMT and iMMT created")
-U = zeros(N+1)
-U[1] = 0.94
-U[2] = -0.94
-U[3] = 0.36
-U[4] = -0.36
-U,nf = Newton(50*U, MMT,iMMT,N,k,m,1e-20)
-
-display(norm(U,1))
 
 # r = 0:0.001:1
 # theta = 2π*r
@@ -267,7 +243,7 @@ display(norm(U,1))
 #     h = surf(X,Y,Z);
 #     set(h,'LineStyle','none')"
 
-
+ U = load("U_2.jld2","U") # loading the approximate solution
 precis = 256 ; eps_N = 1e-30 ; 
 proof_R_to_the_m(U,N,k,m,precis,eps_N)  
 
