@@ -34,7 +34,7 @@ $$\Delta v (z) +  \overline{z}^m v^2(z) =0$$
 
 $$\Delta v(z) +  {z}^{-1} v^2(z) =0$$
 
-In particular, we provide approximate solutions for the cases $m = 0,1,2,20$.
+The code "proof_z_to_the_m.jl" treats the first equation for  $m = 0,1,2,20$ and the code "proof_1_over_r.jl" treats the second one. In each case we provide an approximate solution and prove the existence of a true solution in a vicinity of the approximate one.  The proof is computer-assisted and relies on the analysis derived in Section 5 of [[1]](https://arxiv.org/abs/2411.18361).
 
  
  # Utilisation and References
