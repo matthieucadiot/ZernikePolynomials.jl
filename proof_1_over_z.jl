@@ -164,15 +164,6 @@ MMT, iMMT = passage_matrix(N,k,2*m,80,1e-16)
 MMT = mid.(MMT) ; MMT= Float64.(MMT)
 iMMT = mid.(iMMT); iMMT= Float64.(iMMT)
 
-# Initial guess for the solution
-U = zeros(N+1)
-U[1] = 0.35
-U[2] = -0.35
-U[3] = 0.36
-U[4] = -0.36
-U = Newton(10*U, MMT,iMMT,N,1e-15)  # Refine initial guess
-
-display(norm(U,1))
-
 # Execute the computer-assisted proof
+U = load("U_1_over_z.jld2","U") # loading the approximate solution
 proof_one_over_R(U,N,k,m)  
