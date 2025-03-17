@@ -28,9 +28,13 @@ It provides the necessary rigorous computations of the bounds presented along th
 
 ## Application to PDEs on the disk
 
+The attached code allows to establish existence proofs of solutions to the following elliptic PDEs with Dirichlet boundary condition on the unit disk.
+
 $$\Delta v (z) +  \overline{z}^m v^2(z) =0$$
 
 $$\Delta v(z) +  {z}^{-1} v^2(z) =0$$
+
+In particular, we provide approximate solutions for the cases $m = 0,1,2,20$.
 
  
  # Utilisation and References
@@ -49,7 +53,7 @@ This code is available as open source under the terms of the [MIT License](http:
 If you wish to use this code in your publication, research, teaching, or other activities, please cite it using the following BibTeX template:
 
 ```
-@software{LocalizedPatternSH.jl,
+@software{ZernikePolynomials.jl,
   author = {Matthieu Cadiot},
   title  = {ZernikePolynomials.jl},
   url    = {https://github.com/matthieucadiot/ZernikePolynomials.jl},
